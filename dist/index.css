@@ -1,0 +1,19 @@
+body {
+	padding: 0px;
+}
+
+body {
+
+}
+
+.rainbow {
+	animation: rainbow 1s infinite;
+}
+
+@keyframes rainbow {
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
