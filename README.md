@@ -1,7 +1,11 @@
 # 2challenge4me
 
-only tested on chrome and windows but probably works everywhere probably pls
+:hatching_chick: :hatched_chick:
 
-pls `npm install --production` (`npm install` is fine but slower) then `npm start` for pls :) and thank u
+only tested on chrome on windows but probably works everywhere probably pls
+
+:racehorse:
+
+pls `npm install --production` then `npm start` for pls :) and thank u
 
 :bowtie:
