@@ -56,7 +56,10 @@ export default class View extends React.Component {
 		// const img = document.createElement('img')
 		const img = new Image()
 		document.getElementById('output').appendChild(img)
-		img.width = window.innerWidth
+		const scale = 3000
+		const px = 5
+		const width = scale/px
+		img.width = width // window.innerWidth
 		// img.height = img.height*scale
 
 		img.onload = function () {
@@ -71,7 +74,7 @@ export default class View extends React.Component {
 
 		  var ascii = asciiPixels(imageData)
 			document.getElementById('output').textContent = ascii
-			document.getElementById('output').style.fontSize = '1px'
+			document.getElementById('output').style.fontSize = `${px}px`
 			document.getElementById('output').style.fontFamily = 'monospace'
 
 			var options = {
@@ -110,7 +113,7 @@ export default class View extends React.Component {
 				onDragEnter={this.onDragEnter}
 				onDragOver={this.onDragOver}
 				onDrop={this.onDrop}>
-				drag file here reacts only pls
+				drag image here reacts only pls
 			</div>
 			<div id="output" style={this.outputStyle}>
 			</div>
