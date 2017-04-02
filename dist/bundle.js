@@ -9545,7 +9545,10 @@ var View = function (_React$Component) {
 			// const img = document.createElement('img')
 			var img = new Image();
 			document.getElementById('output').appendChild(img);
-			img.width = window.innerWidth;
+			var scale = 3000;
+			var px = 5;
+			var width = scale / px;
+			img.width = width; // window.innerWidth
 			// img.height = img.height*scale
 
 			img.onload = function () {
@@ -9560,7 +9563,7 @@ var View = function (_React$Component) {
 
 				var ascii = asciiPixels(imageData);
 				document.getElementById('output').textContent = ascii;
-				document.getElementById('output').style.fontSize = '1px';
+				document.getElementById('output').style.fontSize = px + 'px';
 				document.getElementById('output').style.fontFamily = 'monospace';
 
 				var options = {
@@ -9608,7 +9611,7 @@ var View = function (_React$Component) {
 						onDragEnter: this.onDragEnter,
 						onDragOver: this.onDragOver,
 						onDrop: this.onDrop },
-					'drag file here reacts only pls'
+					'drag image here reacts only pls'
 				),
 				_react2.default.createElement('div', { id: 'output', style: this.outputStyle })
 			);

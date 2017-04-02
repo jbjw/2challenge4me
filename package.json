@@ -5,10 +5,8 @@
   "dependencies": {
     "ascii-pixels": "^1.1.0",
     "express": "^4.14.0",
-    "hapi": "^16.0.1",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "ws": "^1.1.1"
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -22,9 +20,9 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "node server.js",
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
