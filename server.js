@@ -2,14 +2,14 @@
 
 'use strict';
 
-var url = require('url');
-var path = require('path');
-var fs = require('fs');
-var http = require('http');
-var https = require('https');
-var express = require('express');
+var url = require('url')
+var path = require('path')
+var fs = require('fs')
+var http = require('http')
+var https = require('https')
+var express = require('express')
 
-const debug = require('debug')('jjd');
+const debug = require('debug')('jjd')
 
 const args = process.argv;
 const httpPort = args[args.indexOf("-p") + 1 || args.indexOf("--port") + 1 || -1] || 80;
